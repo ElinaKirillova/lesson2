@@ -1,0 +1,2 @@
+name = 'Пельмень'
+print(name)
