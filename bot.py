@@ -2,7 +2,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 
 def greet_user (bot, update):
-    print('Вызван /start')
+    print('/start')
     print (update)
     bot.sendMessage(update.message.chat_id, text='Давай общаться!')
 
