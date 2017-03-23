@@ -5,13 +5,13 @@ delta = timedelta (days = 1)
 yesterday = dt - delta
 yesterday.strftime('%Y-%m-%d')
 def last_month():
-	dt = datetime.now()
-	if dt.month == 1 :
-		delta = timedelta (days = 31)
-		last_month = dt - delta
-	else:
-		last_month = dt.replace(month = dt.month-1)
-	return last_month.strftime('%Y-%m-%d')
+    dt = datetime.now()
+    if dt.month == 1 :
+        delta = timedelta (days = 31)
+        last_month = dt - delta
+    else:
+        last_month = dt.replace(month = dt.month-1)
+    return last_month.strftime('%Y-%m-%d')
 
 print(dt.strftime('%Y-%m-%d'))
 print(yesterday.strftime('%Y-%m-%d'))

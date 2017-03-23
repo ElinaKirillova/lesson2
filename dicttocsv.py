@@ -5,6 +5,6 @@ with open ('answers.csv', 'w', encoding='utf-8') as f:
                'бай':'бай'
                }
     fields = ['ключ', 'значение']
-    writer = csv.DictWriter(f, fields, delimiter = ';')
-    writer.writeheader()
-    f.write(writer)
+    writer = csv.writer(f, delimiter=';')
+    writer.writerow(fields)
+    writer.writerows(answers.items())
