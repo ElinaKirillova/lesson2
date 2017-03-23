@@ -7,4 +7,4 @@ def get_answer():
 		if answer_user not in list_answers:
 			print('Согласен с тобой!')
 
-get_answer() 
+get_answer()
