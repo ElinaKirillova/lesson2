@@ -1,0 +1,5 @@
+.DS_Store
+__pycache__/
+answers.csv
+env/
+referat.txt
